@@ -8,6 +8,7 @@ env:
 jobs:
   build:
     name: Test on rust ${{matrix.rust}}  (keys ${{ matrix.key_feature_set }})
+    environment: pr-workflow-approval
     runs-on: ubuntu-latest
     strategy:
       matrix:
