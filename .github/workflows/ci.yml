@@ -86,6 +86,7 @@ jobs:
 
   dummy-approval:
     name: My dummy approval
+    runs-on: ubuntu-latest
     environment: pr-workflow-approval
     steps:
     - run: echo "Approved"
